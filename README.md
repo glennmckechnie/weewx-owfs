@@ -56,17 +56,17 @@ then configure the owserver by moving aside the contents of
 follows, but uncommenting one of the first 3 device entries as suits
 your installation...
 
-/etc/owfs.conf
+ /etc/owfs.conf
 
-#server: usb = all # for a DS9490
-#server: device = /dev/ttyS1 # for a serial port
-#server: device /dev/i2c-1 # for a pi using i2c-1
-server: port = 4304
+ #server: usb = all # for a DS9490
+ #server: device = /dev/ttyS1 # for a serial port
+ #server: device /dev/i2c-1 # for a pi using i2c-1
+ server: port = 4304
 
 restart owserver...
 
-sudo /etc/init.d/owserver stop
-sudo /etc/init.d/owserver start
+ sudo /etc/init.d/owserver stop
+ sudo /etc/init.d/owserver start
 
 There are further notes, extracted from owfs.py, that are worth reading
 if you require more information about this driver and its methods.
